@@ -103,7 +103,21 @@ input.onSound(DetectedSound.Loud, function () {
         `)
 })
 input.onButtonPressed(Button.AB, function () {
-	
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . # . .
+        . # . # .
+        . . # . .
+        `)
+    music.play(music.createSoundExpression(WaveShape.Sine, 1, 5000, 0, 32, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . # # # .
+        . . . . .
+        `)
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
