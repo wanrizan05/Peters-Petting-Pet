@@ -1,0 +1,139 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="device_gesture_event" id="+Q]aG]rwwQyZ!^py$z]n" x="339" y="-49"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_show_leds" id="tMmYQuhri+yV=V5(5S#("><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field><next><block type="music_playable_play" id=":-a6tL7r{jO2MYdK(4r-"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_string_playable" id="!Y=|;2hyf.@:kOcn.#n2"><value name="melody"><shadow type="melody_editor" id="QOqr2m^#-PLanrv{`Xy|"><field name="melody">"- - - - - - - - "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="?l/XtB[|/z:kzPff-.q;"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">120</field></shadow></value></shadow><block type="music_string_playable" id=":^]~%s.m=/BF2J^3tb#i"><value name="melody"><shadow type="melody_editor" id="IJ`]-$4_Y5+Sr5}Lc5}y"><field name="melody">"- B B F B C5 C5 B "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="{=/n%ul!nW$nH(T8CD[P"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></block></value><next><block type="device_show_leds" id="g3-aYZ`ruw}!1EMxgB2@"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="pxt-on-start" id=")Be#w3O`!EfTFBP{=F~:" x="0" y="0"><statement name="HANDLER"><block type="controls_repeat_ext" id="iaJUb]lC0hZ)-wDPQ$4R"><value name="TIMES"><shadow type="math_whole_number" id="-s24ZtpSS?~sL35slRdw"><field name="NUM">5</field></shadow></value><statement name="DO"><block type="device_show_leds" id="0Ws@=5h.2^#QxQ||f~wl"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="music_playable_play_default_bkg" id="ynZ;w$:93e4pKGqQAvt|"><field name="playbackMode">music.PlaybackMode.InBackground</field><value name="toPlay"><shadow type="device_builtin_melody_playable" id="#ogg1~fJ3jJJL8Uj$^k?"><field name="melody">Melodies.PowerUp</field></shadow></value></block></next></block></statement></block></statement></block><block type="device_button_event" id=")un,xx?#AJXH}#rv@;p2" x="806" y="393"><field name="NAME">Button.AB</field></block><block type="device_button_event" id="XzXR?56`XED%}62d0Y[A" x="-6" y="444"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="~S3rNkULr(^E@`TI`Iuw"><field name="LEDS">`
+        . . . . . 
+        # # . # # 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="controls_repeat_ext" id="_Jcg@G*X2*?HKp:/_)`-"><value name="TIMES"><shadow type="math_whole_number" id="4!CFw0OSs%FjkD+`A?[2"><field name="NUM">5</field></shadow></value><statement name="DO"><block type="music_playable_play" id="t?1Odl0BJql=GS[Y7c$3"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="soundExpression_createSoundExpression" id="k#m*:pJo=r+.`ln17,J4" inline="true"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="waveShape">WaveShape.Noise</field><field name="effect">SoundExpressionEffect.None</field><field name="interpolation">InterpolationCurve.Linear</field><data>{"commentRefs":[],"fieldData":{"waveShape":"{\"duration\":500,\"startFrequency\":1938,\"endFrequency\":1938,\"startVolume\":0,\"endVolume\":17.73994861949575,\"wave\":\"noise\",\"interpolation\":\"linear\",\"effect\":\"none\"}"}}</data><value name="startFrequency"><shadow type="math_number_minmax" id="(/C;v;f=thx^mSYTc7{S"><mutation min="0" max="5000" label="StartFrequency" precision="0"></mutation><field name="SLIDER">1938</field></shadow></value><value name="endFrequency"><shadow type="math_number_minmax" id="tTM0=UOQ2).p+28_{0gt"><mutation min="0" max="5000" label="EndFrequency" precision="0"></mutation><field name="SLIDER">1938</field></shadow></value><value name="duration"><shadow type="math_number_minmax" id="zY4TXw0fXXY|pb@F1Jfj"><mutation min="1" max="9999" label="Duration" precision="0"></mutation><field name="SLIDER">500</field></shadow></value><value name="startVolume"><shadow type="math_number_minmax" id="*d3:x2b]96d9G;rHir}b"><mutation min="0" max="255" label="StartVolume" precision="0"></mutation><field name="SLIDER">0</field></shadow></value><value name="endVolume"><shadow type="math_number_minmax" id="6f4k[H_h+[+J~^~KdN51"><mutation min="0" max="255" label="EndVolume" precision="0"></mutation><field name="SLIDER">18</field></shadow></value></shadow></value></block></statement><next><block type="device_show_leds" id="yuBKu8!bI3q]U)D!2[wL"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="device_pin_event" id=",puw-bk+i[+?G234tB5@" x="1156" y="399"><field name="name">TouchPin.P0</field><statement name="HANDLER"><block type="device_show_leds" id="xiY|Q=$9-U5oXJ`98_:Q"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field><next><block type="music_playable_play" id="Qd~30z$x=m0M?q_yVlxk"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_string_playable" id="Y+,m3qNOg8qF0$rTdTJn"><value name="melody"><shadow type="melody_editor" id="EI92CuLmqb#XOAw?P@8@"><field name="melody">"E C E C E C E C "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="VvtUB^FNRX$u0hfF6:G|"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></shadow></value><next><block type="device_show_leds" id="*Q[8n%=_;F)Gn9Z,XUJk"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="device_pin_event" id="sJ~6(c)Z#T)5CWrv3uEm" x="1381" y="398"><field name="name">TouchPin.P1</field><statement name="HANDLER"><block type="device_show_leds" id="Fl2F|Yi]eMQN7E0@`x/]"><field name="LEDS">`
+        . # . # . 
+        # . . . # 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field><next><block type="music_playable_play" id="t=;@q{}+5h]^aWb2Kc9;"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_string_playable" id="x{6V]^CRnmXnAThUbmCD"><value name="melody"><shadow type="melody_editor" id="nJs!Ld66)wPtTkbZ*@b-"><field name="melody">"E A D G E A D G "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="[82GsvRFXLg=2RPGjJw="><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></shadow></value><next><block type="device_show_leds" id="/*@c-@hh1@^8^Sb=R!gM"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="device_pin_event" id="|:V.O7j8)=JqzVcg6mk0" x="1624" y="396"><field name="name">TouchPin.P2</field><statement name="HANDLER"><block type="device_show_leds" id="zz8L8XeebRK%oD4SG%TB"><field name="LEDS">`
+        # # . # # 
+        # # . # # 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field><next><block type="music_playable_play" id="XiV[ORfBoQwqFguyJJq)"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_string_playable" id=":80f-Ef0w~Y{RL6{%F.f"><value name="melody"><shadow type="melody_editor" id="@*@Exh$CUm,P]0.n}gwU"><field name="melody">"- A A G A B B A "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="xcml1v%v8wv3;=H%Z5:P"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></shadow></value><next><block type="device_show_leds" id="3}8Sgk*C(zgInKW5j9?M"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="input_logo_event" id="hVKfO}?Li8Wl,tzvJXlo" x="1844" y="400"><field name="action">TouchButtonEvent.LongPressed</field><statement name="HANDLER"><block type="device_show_leds" id="7P#q]F9YOX5Wp(X/T^9B"><field name="LEDS">`
+        . . . . . 
+        . . # . # 
+        . . . . . 
+        # # # . . 
+        . # . . .
+        `</field><next><block type="music_playable_play" id="[1Gtqg9u}L1M-t:VWs}y"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_string_playable" id="ZKVx}tnaBqg%_?=NxVU*"><value name="melody"><shadow type="melody_editor" id="LvA8*8Ep25h/}t[5Xpv]"><field name="melody">"- A A B A B C5 B "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="M_zF*4;-]J|vlNTP`h|J"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></shadow></value><next><block type="device_show_leds" id="tcL)$D74Qn7w@3C!;)r3"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="device_gesture_event" id="q}CuAAVf*7hk4yx^~%=u" x="2103" y="414"><field name="NAME">Gesture.ScreenUp</field><statement name="HANDLER"><block type="device_show_leds" id="fI,:QTO:-*8YV%Sg[~K+"><field name="LEDS">`
+        . . . . . 
+        # . # . . 
+        . . . . . 
+        . . # # # 
+        . . . # .
+        `</field><next><block type="music_playable_play" id="=OlI-J`fWYldbKzL_d4Z"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_string_playable" id="8Tso1`9@/%@LSl@7U_!p"><value name="melody"><shadow type="melody_editor" id="K*enfvBN$AMZE^j/;4Jc"><field name="melody">"B C5 B A B A A - "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="UJin+$wr7T}LlnRV~=pp"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></shadow></value><next><block type="device_show_leds" id="WE(5~a3a|[P#}5W{KG=P"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="input_on_sound" id="jB|aeKt$=~s}f*+![bx6" x="2337" y="414"><field name="sound">DetectedSound.Loud</field><statement name="HANDLER"><block type="device_show_leds" id="VLW(l`8OU-Mg:P_)x83/"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . # # # .
+        `</field><next><block type="music_playable_play" id="GVzw3{lOxV:G);0W2}M}"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_string_playable" id="yEXK2,;oz}9;5u?5MZ+A"><value name="melody"><shadow type="melody_editor" id="V;5+hn4pqO4lwO$1#4#i"><field name="melody">"C D E F G A B C5 "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="Z2EE(`6,`hy~xdWN3a8z"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></shadow></value><next><block type="device_show_leds" id="-~ainU5FE-R9fhUoai-`"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="input_on_sound" id="Cwtfx}KaWsG#{6VN5T`Z" x="2577" y="411"><field name="sound">DetectedSound.Quiet</field><statement name="HANDLER"><block type="device_show_leds" id=";Zm(w0fk;4}9{=zA)ne~"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # # # # #
+        `</field><next><block type="music_playable_play" id="Kq$6qSXT8O6#M3NHyi1|"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_string_playable" id="l}6;i+kM8dmVCQHIO@s)"><value name="melody"><shadow type="melody_editor" id="+FWi!xDZly+oSq~*%/VB"><field name="melody">"C5 B A G F E D C "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="OY7cvX~R{twyPFs{a!Xy"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></shadow></value><next><block type="device_show_leds" id="0hW78jP:Y8P`Iaw,lBvL"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="device_button_event" id="^LM4l/QR7BgC]5TxE`#q" x="531" y="584"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_show_leds" id="$jcMD.vYRM5[!1St5O}U"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . # 
+        . # # # .
+        `</field><next><block type="controls_repeat_ext" id="wTw%9QTN=?gtZqxSp_ZX"><value name="TIMES"><shadow type="math_whole_number" id="AzEqT3,Tykdo%mFUbUZJ"><field name="NUM">5</field></shadow></value><statement name="DO"><block type="music_playable_play" id="pSf#|mb2.Y%#fm!t]apB"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="soundExpression_createSoundExpression" id="XEcm:SK8C`_ILzNx|4y@" inline="true"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="waveShape">WaveShape.Square</field><field name="effect">SoundExpressionEffect.None</field><field name="interpolation">InterpolationCurve.Linear</field><data>{"commentRefs":[],"fieldData":{"waveShape":"{\"duration\":500,\"startFrequency\":1664,\"endFrequency\":2670,\"startVolume\":0,\"endVolume\":13.142211914062495,\"wave\":\"square\",\"interpolation\":\"linear\",\"effect\":\"none\"}"}}</data><value name="startFrequency"><shadow type="math_number_minmax" id="//tn*hCw/+~xC%|@2?+X"><mutation min="0" max="5000" label="StartFrequency" precision="0"></mutation><field name="SLIDER">1664</field></shadow></value><value name="endFrequency"><shadow type="math_number_minmax" id="SzC@O7r~m+o=N-v7V32r"><mutation min="0" max="5000" label="EndFrequency" precision="0"></mutation><field name="SLIDER">2670</field></shadow></value><value name="duration"><shadow type="math_number_minmax" id=",?Skor_z9T;f=Zy?m-M2"><mutation min="1" max="9999" label="Duration" precision="0"></mutation><field name="SLIDER">500</field></shadow></value><value name="startVolume"><shadow type="math_number_minmax" id="CSTH!*tS5^7QJ~0}^i7^"><mutation min="0" max="255" label="StartVolume" precision="0"></mutation><field name="SLIDER">0</field></shadow></value><value name="endVolume"><shadow type="math_number_minmax" id="NtJho{|O[@CT0*3SXk:9"><mutation min="0" max="255" label="EndVolume" precision="0"></mutation><field name="SLIDER">13</field></shadow></value></shadow></value></block></statement><next><block type="device_show_leds" id="KgfO2IBNd}Yh?eJL_nn2"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block><block type="input_logo_event" id="CRw/ZQO6D.0@E-$rz:I:" x="299" y="863"><field name="action">TouchButtonEvent.Pressed</field><statement name="HANDLER"><block type="device_show_leds" id="pu;eKZ6RY.:fh)6vzo[Y"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field><next><block type="music_playable_play" id=".@aodwnhjBdzyN/|fv$$"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_string_playable" id="AGZkwFlFjsF!`#(|7+o9"><value name="melody"><shadow type="melody_editor" id="q37,JTp;AT;lOvf#RW$$"><field name="melody">"A C5 A C5 A C5 A C5 "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="TRvR+@kz9%TEsiaU39IX"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">100</field></shadow></value></shadow></value><next><block type="device_show_leds" id="JN0!x[z3p^-c-DEbQ^@v"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block></xml>
